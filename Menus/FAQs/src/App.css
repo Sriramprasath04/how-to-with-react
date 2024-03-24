@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-container{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.faq{
+  border: 1px solid hsl(0, 0%, 91%);
+  margin-top: 1rem;
+  border-radius: 12px;
+}
+
+.question{
+  border-radius: 12px;
+  background-color: #f7f7f7;
+  padding: 10px 16px;
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  transition: transform 3s ease-in-out;
+}
+
+.question:hover{
+  background-color: #e7e7e7;
+}
+
+.solution{
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-width 3sec ease-in-out;
+}
+
+.faq.active .solution{
+  padding: 20px;
+  max-height: 100px;
+}
+
+.faq.active .question > img{
+  transform: rotate(90deg);
+}
+
+.arrow{
+  width: 20px;
+}
