@@ -48,7 +48,7 @@
 
 .faq.active .solution{
   padding: 20px;
-  max-height: 100px;
+  max-height: 100%;
 }
 
 .faq.active .question > img{
